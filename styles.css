@@ -192,11 +192,8 @@ img {
 }
 
 .site-header {
-  backdrop-filter: saturate(180%) blur(18px);
-  background:
-    linear-gradient(115deg, color-mix(in srgb, var(--wash-blue) 72%, transparent), transparent 42%),
-    linear-gradient(245deg, color-mix(in srgb, var(--wash-mint) 70%, transparent), transparent 48%),
-    color-mix(in srgb, var(--bg) 78%, transparent);
+  backdrop-filter: none;
+  background: transparent;
   border-bottom: 1px solid transparent;
   left: 0;
   position: sticky;
@@ -207,11 +204,9 @@ img {
 }
 
 .site-header.is-scrolled {
-  background:
-    linear-gradient(115deg, color-mix(in srgb, var(--wash-blue) 82%, transparent), transparent 42%),
-    linear-gradient(245deg, color-mix(in srgb, var(--wash-mint) 78%, transparent), transparent 48%),
-    color-mix(in srgb, var(--bg) 88%, transparent);
-  border-color: var(--line);
+  backdrop-filter: saturate(150%) blur(12px);
+  background: color-mix(in srgb, var(--bg) 42%, transparent);
+  border-color: color-mix(in srgb, var(--line) 60%, transparent);
 }
 
 .nav {
