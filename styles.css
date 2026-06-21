@@ -346,6 +346,10 @@ img {
   text-transform: uppercase;
 }
 
+.hero .eyebrow {
+  text-transform: none;
+}
+
 h1,
 h2,
 h3,
@@ -388,8 +392,7 @@ h3 {
 .body-copy p,
 .timeline-item p,
 .project-card p,
-.contact-note,
-.testimonial blockquote {
+.contact-note {
   color: var(--muted);
   font-size: 1rem;
 }
@@ -582,15 +585,13 @@ h3 {
   font-weight: 700;
 }
 
-.project-grid,
-.testimonial-grid {
+.project-grid {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .project-card,
-.testimonial,
 .contact-form {
   backdrop-filter: blur(14px);
   background: color-mix(in srgb, var(--surface) 74%, transparent);
@@ -599,8 +600,7 @@ h3 {
 }
 
 .surface .project-card,
-.surface .contact-form,
-.surface .testimonial {
+.surface .contact-form {
   background: color-mix(in srgb, var(--surface) 70%, transparent);
 }
 
@@ -643,20 +643,6 @@ h3 {
 .contact-links a,
 .footer-links a {
   color: var(--accent);
-  font-weight: 800;
-}
-
-.testimonial {
-  margin: 0;
-  padding: 1.6rem;
-}
-
-.testimonial blockquote {
-  margin: 0 0 1rem;
-}
-
-.testimonial figcaption {
-  color: var(--text);
   font-weight: 800;
 }
 
@@ -882,8 +868,7 @@ a:focus-visible {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .project-grid,
-  .testimonial-grid {
+  .project-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -926,8 +911,7 @@ a:focus-visible {
   .body-copy p,
   .timeline-item p,
   .project-card p,
-  .contact-note,
-  .testimonial blockquote {
+  .contact-note {
     font-size: 0.96rem;
   }
 
